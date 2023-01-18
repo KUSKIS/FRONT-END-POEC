@@ -1,0 +1,10 @@
+<app-template-container title="ajouter un canal">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Canal</label>
+      <input type="text" class="form-control" id="name" formControlName="name">
+    </div>
+    <br />
+    <app-btn type="submit" label="Submit"></app-btn>
+  </form>
+</app-template-container>
